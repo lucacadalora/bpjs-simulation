@@ -1,0 +1,94 @@
+/* Google Fonts */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadeInDown 1s;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+input[type="number"] {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #e9ecef;
+    margin-top: auto;
+}
+
+#hasil .card {
+    animation: fadeInUp 1s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.1rem;
+}
+
+/* Animasi */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 2rem;
+    }
+
+    input[type="number"] {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
